@@ -7,6 +7,8 @@ import cors from "cors";
 
 export async function initServer() {
   const app = express();
+
+  
   app.use(bodyParser.json());
   app.use(cors());
   const graphqlServer = new ApolloServer({
